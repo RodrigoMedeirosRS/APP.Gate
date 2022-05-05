@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    ".import": true,
+    ".mono": true,
+    ".vscode": true
+  }
+}
