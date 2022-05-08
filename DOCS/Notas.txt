@@ -1,0 +1,3 @@
+Limite de caractéres de texto narrativo: 240
+Limite de caractéres de diálogo: 71
+Até 4 opções de diálogo.
