@@ -26,15 +26,14 @@ public class CameraCTRL : Camera
 	  else
 		  Input.SetMouseMode(Input.MouseMode.Visible);
   }
-
-	public override void _Input(InputEvent movimento) 
+  public override void _Input(InputEvent movimento) 
   {
 	  var movimentoMouse = movimento as InputEventMouseMotion;
-	var movimentoTela = movimento as InputEventScreenDrag;
+	  var movimentoTela = movimento as InputEventScreenDrag;
 	  if (movimentoMouse != null && Input.IsActionPressed("ui_accept")) 
 	  {
 	  //var x = Mathf.Clamp(movimentoMouse.Relative.y * LookSensitivity, MinLookAngle, MaxLookAngle);
-	  this.Rotation -= new Vector3(movimentoMouse.Relative.y * LookSensitivity, movimentoMouse.Relative.x * LookSensitivity, 0);
+	  	this.Rotation -= new Vector3(movimentoMouse.Relative.y * LookSensitivity, movimentoMouse.Relative.x * LookSensitivity, 0);
 	  }
 	else if (movimentoTela != null)
 	{

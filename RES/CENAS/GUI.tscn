@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://RES/THEMES/FlatUI/kenneyUI-blue.tres" type="Theme" id=1]
+
+[node name="GUI" type="Control"]
+
+[node name="Button" type="Button" parent="."]
+margin_right = 207.0
+margin_bottom = 42.251
+theme = ExtResource( 1 )
+text = "Teste"
