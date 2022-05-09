@@ -12,8 +12,8 @@ public class MainCTRL : Spatial
 	private GUICTRL GUI { get; set; }
 	public override void _Ready()
 	{
-		ObterTextos();
 		PopularNodes();
+		ObterTextos();
 	}
 
 	private void PopularNodes()
@@ -24,9 +24,13 @@ public class MainCTRL : Spatial
 
 	private void ObterTextos()
 	{
-		var json = System.IO.File.Exists("./dialogue.json");
-		var text = System.IO.File.ReadAllText("./dialogue.json");
-		var texto = JsonConvert.DeserializeObject<List<Dialog>>(text);
+		GUI.PopularDialogos(null);
+		if(System.IO.File.Exists("./dialogue.json"))
+		{
+			var texto = System.IO.File.ReadAllText("./dialogue.json");
+			var dialogs = JsonConvert.DeserializeObject<List<Dialog>>(texto);
+			GUI.PopularDialogos(dialogs);
+		}
 	}
 
 	private void _on_Camera_EncontrouAvatar(string itemCode)
