@@ -3,11 +3,13 @@
 
 public class CameraCTRL : Camera
 {
+	[Signal]
+	public delegate void EncontrouAvatar(string itemCode);
+
 	private float MinLookAngle { get; set; }
 	private float MaxLookAngle { get; set; }
 	private float LookSensitivity { get; set; }
 	private RayCast Sensor { get; set; }
-	private Control GUI { get; set; }
 	private bool Interecao { get; set; }
 			
 	private void PopularNodes()
@@ -16,8 +18,6 @@ public class CameraCTRL : Camera
 		MaxLookAngle = 90f;
 		LookSensitivity = 0.005f;
 		Sensor = GetNode<RayCast>("./RayCast");
-		GUI = GetNode<Control>("./GUI");
-		GUI.Visible = false;
 		Interecao = false;
 	}
 		
@@ -53,12 +53,14 @@ public class CameraCTRL : Camera
 
 	private void ExibirDialogo()
 	{
-		var colisor = Sensor.GetCollider();
-		if(colisor != null)
+		if (!Interecao)
 		{
-			Interecao = true;
-			GUI.Visible = true;
-			GD.Print((colisor as Node).Name);
+			var colisor = Sensor.GetCollider();
+			if(colisor != null)
+			{
+				Interecao = true;
+				EmitSignal("EncontrouAvatar", (colisor as Node).Name);
+			}
 		}
 	}
 	public override void _Input(InputEvent movimento) 
@@ -70,7 +72,6 @@ public class CameraCTRL : Camera
 				
 			if (movimentoMouse != null && Input.IsActionPressed("ui_accept")) 
 			{
-				//var x = Mathf.Clamp(movimentoMouse.Relative.y * LookSensitivity, MinLookAngle, MaxLookAngle);
 				this.Rotation -= new Vector3(movimentoMouse.Relative.y * LookSensitivity, movimentoMouse.Relative.x * LookSensitivity, 0);
 			}
 			else if (movimentoTela != null)

@@ -1,8 +1,0 @@
-[{"type":"Text","id":"11191395-10b2-4184-91ca-01b1263da624","actor":"","name":"","next":"709cb6c7-5394-4ee3-80a5-1069b925ab54"},
-{"type":"Text","id":"bbd4ade1-4bb4-4baf-ac54-876a6ca006bd","actor":"","name":"","next":null},
-    {"type":"Text","id":"91f4e36b-5336-4885-ba2c-4db584a82c20","actor":"","name":"","next":null},
-    {"type":"Branch","id":"709cb6c7-5394-4ee3-80a5-1069b925ab54","context":"","variable":"","branches":
-        {"Teste1":"bbd4ade1-4bb4-4baf-ac54-876a6ca006bd",
-        "Teste2":"91f4e36b-5336-4885-ba2c-4db584a82c20",
-        "Teste3":"05bd9a5f-b843-4488-b062-c0024631f2f2"}},
-    {"type":"Text","id":"05bd9a5f-b843-4488-b062-c0024631f2f2","actor":"","name":"","next":null}]

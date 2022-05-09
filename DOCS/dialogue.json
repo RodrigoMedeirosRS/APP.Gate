@@ -1,0 +1,32 @@
+[
+    {
+        "type": "Text",
+        "id": "b32731d7-5ff5-43c7-8cdb-0d3728c632ab",
+        "actor": "LaSalle",
+        "name": "Ola, seja bem vindo ao mundo digital!",
+        "next": "2e422cc0-6964-4ad4-8784-74f4550ebf29"
+    },
+    {
+        "type": "Branch",
+        "id": "2e422cc0-6964-4ad4-8784-74f4550ebf29",
+        "variable": "",
+        "branches": {
+            "Quem é você?": "bcbf8968-fab6-444c-b5d7-adde3a161674",
+            "Que lugar é esse?": "4f8a90ff-99b2-41f6-9c1a-20c82cf27feb"
+        }
+    },
+    {
+        "type": "Text",
+        "id": "bcbf8968-fab6-444c-b5d7-adde3a161674",
+        "actor": "La Salle",
+        "name": "Eu sou São João Batista de LaSalle",
+        "next": "2e422cc0-6964-4ad4-8784-74f4550ebf29"
+    },
+    {
+        "type": "Text",
+        "id": "4f8a90ff-99b2-41f6-9c1a-20c82cf27feb",
+        "actor": "LaSalle",
+        "name": "",
+        "next": "2e422cc0-6964-4ad4-8784-74f4550ebf29"
+    }
+]
