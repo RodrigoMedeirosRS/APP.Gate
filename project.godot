@@ -18,8 +18,6 @@ config/icon="res://icon.png"
 
 window/size/width=1280
 window/size/height=720
-window/size/resizable=false
-window/stretch/mode="viewport"
 
 [input]
 
@@ -86,3 +84,18 @@ common/enable_pause_aware_picking=true
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
+quality/shadow_atlas/size=1024
+quality/shadow_atlas/size.mobile=1024
+quality/shadow_atlas/cubemap_size=256
+quality/shadow_atlas/quadrant_1_subdiv=1
+quality/shadow_atlas/quadrant_2_subdiv=2
+quality/shadow_atlas/quadrant_3_subdiv=3
+quality/reflections/texture_array_reflections=false
+quality/reflections/high_quality_ggx=false
+quality/reflections/irradiance_max_size=64
+quality/shading/force_vertex_shading.mobile=false
+quality/depth_prepass/enable=false
+quality/skinning/software_skinning_fallback=false
+quality/lightmapping/use_bicubic_sampling=false
+quality/reflections/atlas_size=1024
+quality/depth/hdr=false

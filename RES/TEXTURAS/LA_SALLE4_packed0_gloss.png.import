@@ -14,7 +14,7 @@ dest_files=[ "res://.import/LA_SALLE4_packed0_gloss.png-686e6a99bdf84456415fbe86
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
