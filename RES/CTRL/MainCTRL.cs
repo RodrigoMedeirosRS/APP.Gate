@@ -26,12 +26,8 @@ public class MainCTRL : Spatial
 		try
 		{
 			var parametro = ObterParametro();
-			var a = parametro.Replace("\"[", "[");
-			var b = a.Replace("]\"", "]");
-			var c = b.Replace("\\", "");
-			//GUI.SetarTexto("Sucesso");
-			var textos = JsonConvert.DeserializeObject<List<Dialog>>(c);
-			GUI.SetarTexto("Sucesso");
+			var textos = JsonConvert.DeserializeObject<List<Dialog>>(parametro);
+			GUI.PopularDialogos(textos);
 		}
 		catch (Exception ex)
 		{
@@ -40,25 +36,11 @@ public class MainCTRL : Spatial
 	}
 	private string ObterParametro()
 	{
-		return JavaScript.Eval("new URLSearchParams(window.location.search).get('json')")?.ToString();
-	}
-	private void CarregarArquivo()
-	{
-		var file = new Godot.File();
-		file.Open("res://save_game.dat", File.ModeFlags.Read);
-		file.GetPathAbsolute();
-		var content = file.GetAsText();
-		GUI.SetarTexto(file.GetPathAbsolute());
-		file.Close();
-	}
-
-	private void CriarPasta()
-	{
-		var file = new File();
-		file.Open("res://save_game.dat", File.ModeFlags.Write);
-		file.StoreString("Arquivo Teste");
-		GUI.SetarTexto(file.GetPathAbsolute());
-		file.Close();
+		var parametro = JavaScript.Eval("new URLSearchParams(window.location.search).get('json')")?.ToString();
+		var a = parametro.Replace("\"[", "[");
+		var b = a.Replace("]\"", "]");
+		var c = b.Replace("\\", "");
+		return c;
 	}
 	private void _on_Camera_EncontrouAvatar(string itemCode)
 	{
