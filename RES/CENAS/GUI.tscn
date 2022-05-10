@@ -83,6 +83,7 @@ margin_top = 185.0
 margin_right = 353.0
 margin_bottom = 227.251
 
+[connection signal="button_up" from="Narrativa/Continuar" to="." method="_on_Continuar_button_up"]
 [connection signal="button_up" from="Dialogo/VBoxContainer/Button1" to="." method="_on_Button1_button_up"]
 [connection signal="button_up" from="Dialogo/VBoxContainer/Button2" to="." method="_on_Button2_button_up"]
 [connection signal="button_up" from="Dialogo/VBoxContainer/Button3" to="." method="_on_Button3_button_up"]
