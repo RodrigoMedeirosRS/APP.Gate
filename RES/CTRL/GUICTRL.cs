@@ -23,6 +23,10 @@ public class GUICTRL : Control
 		else
 			Texto.Text = "Pegou";
 	}
+	public void SetarTexto(string text)
+	{
+		Texto.Text = text;
+	}
 	public void PopularDialogos(List<Dialog> dialogos)
 	{
 		Dialogos = new List<Dialog>();
