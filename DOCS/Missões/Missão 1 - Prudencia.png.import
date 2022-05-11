@@ -2,25 +2,25 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/LA_SALLE4_packed0_gloss.png-686e6a99bdf84456415fbe8653844014.stex"
+path="res://.import/Missão 1 - Prudencia.png-08ce9472c3566de6a5dd062b32e338e9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RES/TEXTURAS/LA_SALLE4_packed0_gloss.png"
-dest_files=[ "res://.import/LA_SALLE4_packed0_gloss.png-686e6a99bdf84456415fbe8653844014.stex" ]
+source_file="res://DOCS/Missões/Missão 1 - Prudencia.png"
+dest_files=[ "res://.import/Missão 1 - Prudencia.png-08ce9472c3566de6a5dd062b32e338e9.stex" ]
 
 [params]
 
-compress/mode=3
+compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

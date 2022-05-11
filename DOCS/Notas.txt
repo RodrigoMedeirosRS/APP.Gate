@@ -1,5 +1,5 @@
 Limite de caractéres de texto narrativo: 200
-Limite de caractéres de diálogo: 25
+Limite de caractéres de diálogo: 50
 Até 4 opções de diálogo.
 
 user:// == /home/rlehnemann/.local/share/godot/app_userdata/APP.Gate

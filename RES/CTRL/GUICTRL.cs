@@ -59,7 +59,7 @@ public class GUICTRL : Control
 			button.Visible = false;
 		for(int i = 0; i < opcoes.Count; i++)
 		{
-			Botoes[i].Text = opcoes.ElementAt(i).Key;
+			Botoes[i].GetChild<Label>(0).Text = opcoes.ElementAt(i).Key;
 			Botoes[i].Visible = true;
 		}
 	}
