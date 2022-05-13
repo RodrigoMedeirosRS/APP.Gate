@@ -14,6 +14,7 @@ public class GUICTRL : Control
 	private Label Texto { get; set; }
 	private List<Button> Botoes { get; set; }
 	private CharacterCTRL LaSalle { get; set; }
+	private CharacterCTRL Violet { get; set; }
 	public override void _Ready()
 	{
 		Narrativa = GetNode<Control>("./Narrativa");
@@ -23,10 +24,11 @@ public class GUICTRL : Control
 		foreach (var botao in GetNode<VBoxContainer>("Dialogo/VBoxContainer").GetChildren())
 			Botoes.Add(botao as Button);
 	}
-	public void PopularDialogos(List<Dialog> dialogos, CharacterCTRL laSalle)
+	public void PopularDialogos(List<Dialog> dialogos, CharacterCTRL laSalle, CharacterCTRL violet)
 	{
 		Dialogos = new List<Dialog>();
 		LaSalle = laSalle;
+		Violet = violet;
 		Dialogos = dialogos;
 		ValidarTipoDialogo(Dialogos[0]);
 	}
@@ -39,6 +41,17 @@ public class GUICTRL : Control
 	}
 	private void InstanciarDialogoNarrativo(Dialog dialogo)
 	{
+		if(dialogo.Actor == "Violet")
+		{
+			Violet.Visible = true;
+			LaSalle.Visible = false;
+		}
+		else
+		{
+			Violet.Visible = false;
+			LaSalle.Visible = true;
+		}
+		Violet.Animar(true);
 		LaSalle.Animar(true);
 		Narrativa.Visible = true;
 		Dialogo.Visible = false;
@@ -51,6 +64,7 @@ public class GUICTRL : Control
 	}
 	private void InstanciarDialogoEscolha(Dialog dialogo)
 	{
+		Violet.Animar(false);
 		LaSalle.Animar(false);
 		Narrativa.Visible = false;
 		Dialogo.Visible = true;
