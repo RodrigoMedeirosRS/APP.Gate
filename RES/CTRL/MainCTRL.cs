@@ -27,7 +27,8 @@ public class MainCTRL : Spatial
 		{
 			var parametro = ObterParametro();
 			var textos = JsonConvert.DeserializeObject<List<Dialog>>(parametro);
-			GUI.PopularDialogos(textos);
+			var laSalle = GetNode<CharacterCTRL>("./LaSalle");
+			GUI.PopularDialogos(textos, laSalle);
 		}
 		catch (Exception ex)
 		{

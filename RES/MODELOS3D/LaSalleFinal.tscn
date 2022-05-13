@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://RES/MODELOS3D/Talking-LaSalle.tres" type="Animation" id=1]
+[ext_resource path="res://RES/MODELOS3D/Idle-LaSalle.tres" type="Animation" id=2]
+[ext_resource path="res://RES/MODELOS3D/Idle-LaSalle.glb" type="PackedScene" id=3]
+[ext_resource path="res://RES/MATERIAIS/LaSalle.tres" type="Material" id=4]
+[ext_resource path="res://RES/CTRL/CharacterCTRL.cs" type="Script" id=5]
+
+[node name="LaSalleFinal" instance=ExtResource( 3 )]
+script = ExtResource( 5 )
+
+[node name="Body" parent="Armature/Skeleton" index="0"]
+material/0 = ExtResource( 4 )
+
+[node name="Bottoms" parent="Armature/Skeleton" index="1"]
+material/0 = ExtResource( 4 )
+
+[node name="Eyelashes" parent="Armature/Skeleton" index="2"]
+visible = false
+
+[node name="Eyes" parent="Armature/Skeleton" index="3"]
+material/0 = ExtResource( 4 )
+
+[node name="Hair" parent="Armature/Skeleton" index="4"]
+material/0 = ExtResource( 4 )
+
+[node name="Shoes" parent="Armature/Skeleton" index="5"]
+material/0 = ExtResource( 4 )
+
+[node name="Tops" parent="Armature/Skeleton" index="6"]
+material/0 = ExtResource( 4 )
+
+[node name="AnimationPlayer" parent="." index="1"]
+autoplay = "Idle"
+anims/Idle = ExtResource( 2 )
+anims/Talk = ExtResource( 1 )
