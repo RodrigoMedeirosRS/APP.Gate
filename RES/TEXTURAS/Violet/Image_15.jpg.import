@@ -2,27 +2,25 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Image_15.jpg-94782ab7a6503223226f6e8d1271db52.s3tc.stex"
-path.etc="res://.import/Image_15.jpg-94782ab7a6503223226f6e8d1271db52.etc.stex"
+path="res://.import/Image_15.jpg-94782ab7a6503223226f6e8d1271db52.stex"
 metadata={
-"imported_formats": [ "s3tc", "etc" ],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://RES/TEXTURAS/Violet/Image_15.jpg"
-dest_files=[ "res://.import/Image_15.jpg-94782ab7a6503223226f6e8d1271db52.s3tc.stex", "res://.import/Image_15.jpg-94782ab7a6503223226f6e8d1271db52.etc.stex" ]
+dest_files=[ "res://.import/Image_15.jpg-94782ab7a6503223226f6e8d1271db52.stex" ]
 
 [params]
 
-compress/mode=2
+compress/mode=3
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=true
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
