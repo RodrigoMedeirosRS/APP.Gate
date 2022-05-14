@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Talking-Violet.glb-99b4a1a3d0ea26bc9f888d68c2e3ece4.scn"
+path="res://.import/TalkViolet.glb-ea952b7a0f2987b52358d259bef40cc2.scn"
 
 [deps]
 
-source_file="res://RES/MODELOS3D/Talking-Violet.glb"
-dest_files=[ "res://.import/Talking-Violet.glb-99b4a1a3d0ea26bc9f888d68c2e3ece4.scn" ]
+source_file="res://RES/MODELOS3D/Violet/TalkViolet.glb"
+dest_files=[ "res://.import/TalkViolet.glb-ea952b7a0f2987b52358d259bef40cc2.scn" ]
 
 [params]
 

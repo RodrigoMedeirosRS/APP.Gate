@@ -51,8 +51,8 @@ public class GUICTRL : Control
 			Violet.Visible = false;
 			LaSalle.Visible = true;
 		}
-		Violet.Animar(true);
-		LaSalle.Animar(true);
+		Violet.Animar(this.Visible);
+		LaSalle.Animar(this.Visible);
 		Narrativa.Visible = true;
 		Dialogo.Visible = false;
 		DialogoAtual = dialogo;
@@ -61,6 +61,11 @@ public class GUICTRL : Control
 	public void SetarTexto(string text)
 	{
 		Texto.Text = text;
+	}
+	public void Animar()
+	{
+		Violet.Animar(this.Visible);
+		LaSalle.Animar(this.Visible);
 	}
 	private void InstanciarDialogoEscolha(Dialog dialogo)
 	{

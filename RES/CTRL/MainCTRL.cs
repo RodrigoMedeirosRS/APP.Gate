@@ -47,5 +47,6 @@ public class MainCTRL : Spatial
 	private void _on_Camera_EncontrouAvatar(string itemCode)
 	{
 		GUI.Visible = true;
+		GUI.Animar();
 	}
 }
