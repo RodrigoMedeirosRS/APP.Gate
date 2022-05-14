@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/IdleViolet.glb-57ad6d2d2739a1f74f1db76e8ad81989.scn"
+path="res://.import/IdleViolet.glb-d1913d7ff48a7f9a1292756bd7bbd673.scn"
 
 [deps]
 
-source_file="res://RES/MODELOS3D/Violet/IdleViolet.glb"
-dest_files=[ "res://.import/IdleViolet.glb-57ad6d2d2739a1f74f1db76e8ad81989.scn" ]
+source_file="res://RES/MODELOS3D/Violet2/IdleViolet.glb"
+dest_files=[ "res://.import/IdleViolet.glb-d1913d7ff48a7f9a1292756bd7bbd673.scn" ]
 
 [params]
 

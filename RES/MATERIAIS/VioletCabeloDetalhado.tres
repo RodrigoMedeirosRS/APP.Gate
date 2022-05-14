@@ -3,9 +3,6 @@
 [ext_resource path="res://RES/TEXTURAS/Violet_packed0_diffuse.png" type="Texture" id=1]
 
 [resource]
+flags_transparent = true
+flags_unshaded = true
 albedo_texture = ExtResource( 1 )
-emission_enabled = true
-emission = Color( 0.407843, 0.345098, 0.47451, 1 )
-emission_energy = 0.97
-emission_operator = 0
-emission_on_uv2 = false
